@@ -1,0 +1,160 @@
+/* code for the pop up */
+body {
+    height: 310px;
+    width: 300px;
+}
+
+h3 {
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 6px;
+}
+
+#diagram {
+    height: 61px;
+    margin-left: 67.5px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 165px;
+}
+
+#author {
+    font-size: 12px;
+    margin-left: 54px;
+    margin-bottom: 10px;
+}
+
+#pushTalk {
+    margin-left: 36px;
+}
+
+#changeKey {
+    margin-left: 6px;
+}
+
+#muteTab {
+    margin-left: 4.5px;
+}
+
+#iButtons {
+    margin-left: 36px;
+}
+
+#unWarn {
+    margin-left: 1.5px;
+}
+
+.popupBtn {
+    background: #eee;
+    border-radius: 3px;
+    border: solid black 1px;
+    color: black;
+    font-size: 10px;
+    padding: 3px 6px;
+}
+
+#author img {
+    height: 15px;
+    width: 15px;
+}
+
+/* code for the content script */
+
+#buttonContainer {
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 200px;
+    z-index: 1000000;
+}
+
+#buttonContainer button {
+    height: 100%;
+    width: 33%;
+}
+
+#qbutton {
+    border-bottom-right-radius: 10px;
+}
+
+#buttonContainer button img {
+    height: 60%;
+    width: 60%;
+}
+
+#userMessage {
+    background-color: white;
+    border-radius: 5px;
+    float: right;
+    height: 5.65vh;
+    margin-bottom: 5px;
+    min-width: 150px;
+    vertical-align: bottom;
+    z-index: 1000000;
+}
+
+#userMessage img {
+    display: inline-block;
+    height: 75%;
+    margin-right: 5%;
+    vertical-align: middle;
+    width: 30%;
+
+}
+
+#userMessage p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 65%;
+
+}
+
+#case {
+    height: 50%;
+    left: 2%;
+    max-width: 150px;
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    z-index: 1000000;
+}
+#warn {
+    animation: flashed 2.2s linear 0s 1;
+    background-color: red;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000001;
+}
+@keyframes flashed {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.5;
+    }
+    30% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
